@@ -3,12 +3,13 @@
 import configparser, requests
 import RPi.GPIO as GPIO
 from time import sleep
+import os
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read(os.path.dirname(os.path.realpath(__file__)) + '/' + 'config.ini')
 
 cmk = dict(config._sections['cmk_auth'])
 led = dict(config._sections['led'])
