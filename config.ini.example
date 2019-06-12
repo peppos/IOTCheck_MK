@@ -1,0 +1,14 @@
+[cmk_auth]
+
+CheckMKMaster = testmaster
+CheckMKAutomationUser = testuser
+CheckMKAutomationPassword = testpassword
+CheckMKSite = testsite
+
+[piezo]
+
+PiezoPin = 24
+
+[led]
+
+LedPin = 15
