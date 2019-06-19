@@ -1,0 +1,11 @@
+[Unit]
+Description=Start IOTCheck_mk
+After=multi-user.target
+Wants=network-online.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/opt/prj/IOTCheck_MK/venv/bin/python /opt/prj/IOTCheck_MK/IOTCheck_mk.py
